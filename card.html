@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="border-t-4 border-b-4 border-yellow-600">
+        <!-- Top Navbar -->
+        <div class="flex justify-between items-center p-2 bg-black w-full">
+          <!-- Logo -->
+          <div>
+            <img class="h-14 object-contain" src="al qudsiyah.jpg" alt="Logo">
+          </div>
+      
+          <!-- Search Bar -->
+          <div class="hidden sm:block flex-1 mx-4">
+            <input
+              class="w-full h-8 px-4 text-gray-900 rounded-lg placeholder-gray-400"
+              placeholder="Search">
+          </div>
+      
+          <!-- Buttons for Desktop -->
+          <div class="hidden sm:flex items-center space-x-2">
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Track Your Order</button>
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Cart</button>
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Log In</button>
+          </div>
+      
+          <!-- Icons for Mobile -->
+          <div class="flex sm:hidden items-center space-x-3">
+            <img src="cart.png" alt="Cart" class="w-8 h-8 rounded-lg cursor-pointer">
+            <img src="login.png" alt="Login" class="w-8 h-8 rounded-lg cursor-pointer">
+          </div>
+        </div>
+      
+        <!-- Bottom Navbar -->
+        <nav class="bg-yellow-600">
+          <ul class="flex justify-center sm:justify-start items-center space-x-4 p-2">
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Home</a></li>
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">About us</a></li>
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+  </body>

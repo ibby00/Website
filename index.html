@@ -14,7 +14,7 @@
         <p>FREE DELIVERY ALL OVER INDIA</p>
         <p>Need Help? Proudly Make In India</p>
     </div>
-    <div class="border-t-4 border-b-4 border-yellow-600">    
+    <!-- <div class="border-t-4 border-b-4 border-yellow-600">    
         <div class="flex justify-between p-1  bg-black w-full">
             <div>
                 <img class="col-span-2 max-h-14 w-full object-contain lg:col-span-1" src="al qudsiyah.jpg" alt="Transistor">
@@ -27,8 +27,10 @@
                 <button class=" font-bold text-sm bg-white px-4 py-2 text-black rounded-md m-2">Cart</button>
                 <button class=" font-bold text-sm bg-white px-4 py-2 text-black rounded-md m-2">Log In</button>
             </div>
-            <div class="block sm:hidden text-center mt-3 pr-3">
-                <img src="login.png" alt="Login Image" class="w-10 h-auto rounded-lg shadow-md  max-h-14 cursor-pointer ">
+            <div class="flex sm:hidden text-center mt-3 pr-3">
+                <img src="" alt="">
+                <img src="cart.png" alt="Cart Image" class="w-10  rounded-lg shadow-md  max-h-14 cursor-pointe mr-3 mb-2 ">
+                <img src="login.png" alt="Login Image" class="w-10 h-auto rounded-lg shadow-md  max-h-14 cursor-pointer mb-2 ">
             </div>
         </div>
     </div>
@@ -41,13 +43,56 @@
                 <li><a href="#" class="text-white hover:bg-slate-800 rounded-lg p-2">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    
+    <div class="border-t-4 border-b-4 border-yellow-600">
+        <!-- Top Navbar -->
+        <div class="flex justify-between items-center p-2 bg-black w-full">
+          <!-- Logo -->
+          <div>
+            <img class="h-14 object-contain" src="al qudsiyah.jpg" alt="Logo">
+          </div>
+      
+          <!-- Search Bar -->
+          <div class="hidden sm:block flex-1 mx-4">
+            <input
+              class="  w-15 h-8 px-4 text-gray-900 rounded-lg placeholder-gray-400"
+              placeholder="Search">
+          </div>
+      
+          <!-- Buttons for Desktop -->
+          <div class="hidden sm:flex items-center space-x-2">
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Track Your Order</button>
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Cart</button>
+            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Log In</button>
+          </div>
+      
+          <!-- Icons for Mobile -->
+          <div class="flex sm:hidden items-center space-x-4">
+            <img src="cart.png" alt="Cart" class="w-8 h-8 rounded-lg cursor-pointer">
+            <img src="login.png" alt="Login" class="w-8 h-8 rounded-lg cursor-pointer">
+          </div>
+        </div>
+        </div>
+      
+        <!-- Bottom Navbar -->
+        <nav class="bg-yellow-600 h-11">
+          <ul class="flex justify-center sm:justify-start items-center space-x-4 p-2">
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Home</a></li>
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">About us</a></li>
+            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Contact</a></li>
+          </ul>
+        </nav>
+    
     <div class="">
-        <img class="mt-1 w-screen h-96 block sm:hidden object-cover" src="https://images.pexels.com/photos/12580619/pexels-photo-12580619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-        <img class="mt-1 w-screen h-auto  hidden sm:block object-cover" src="https://images.pexels.com/photos/7598170/pexels-photo-7598170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img class="mt-1 w-screen h-[50vh] block sm:hidden object-cover" 
+        src="https://images.pexels.com/photos/13767420/pexels-photo-13767420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img class="mt-1 w-screen h-[70vh]  hidden sm:block object-cover" 
+        src="https://images.pexels.com/photos/7598170/pexels-photo-7598170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
     </div>
     
-    <div class=" flex-col justify-items-center text-center border-t-4 border-yellow-600">
+    <!-- <div class=" flex-col justify-items-center text-center border-t-4 border-yellow-600">
+
         <div class="md:flex justify-center mt-8 mb-8 ">
             <div class=" w-60 h-80 container border border-red-100 rounded-lg overflow-hidden bg-white mr-5 cursor-pointer   ">
                 <div class=" ">
@@ -82,35 +127,139 @@
                 </div>
             </div>   
         </div>
+    </div> -->
+    
+    
+    <div class="flex items-center justify-center m-4 border-t-4 border-yellow-600">
+        <div class="container mx-auto p-4">
+            <!-- Grid Container -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <!-- Card 1 -->
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  class="w-full h-48 object-cover"
+                  src="https://images.pexels.com/photos/30238397/pexels-photo-30238397/free-photo-of-stylish-blender-
+                  with-glass-jar-and-sauce.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Card Image"
+                />
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800">Card Title 1</h2>
+                  <p class="mt-2 text-gray-600">
+                    This is the description for card 1. Add more details here.
+                  </p>
+                  <div class="mt-4 flex justify-between items-center">
+                    <span class="text-lg font-bold text-gray-800">₹ 500.00</span>
+                    <a
+                      href="#"
+                      class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-500"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  class="w-full h-48 object-cover"
+                  src="https://images.pexels.com/photos/264870/pexels-photo-264870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Card Image"
+                />
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800">Card Title 2</h2>
+                  <p class="mt-2 text-gray-600">
+                    This is the description for card 2. Add more details here.
+                  </p>
+                  <div class="mt-4 flex justify-between items-center">
+                    <span class="text-lg font-bold text-gray-800">₹ 500.00</span>
+                    <a
+                      href="#"
+                      class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-500"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  class="w-full h-48 object-cover"
+                  src="https://images.pexels.com/photos/4938265/pexels-photo-4938265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Card Image"
+                />
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800">Card Title 3</h2>
+                  <p class="mt-2 text-gray-600">
+                    This is the description for card 3. Add more details here.
+                  </p>
+                  <div class="mt-4 flex justify-between items-center">
+                    <span class="text-lg font-bold text-gray-800">₹ 500.00</span>
+                    <a
+                      href="#"
+                      class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-500"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  class="w-full h-48 object-cover"
+                  src="https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Card Image"
+                />
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800">Card Title 4</h2>
+                  <p class="mt-2 text-gray-600">
+                    This is the description for card 4. Add more details here.
+                  </p>
+                  <div class="mt-4 flex justify-between items-center">
+                    <span class="text-lg font-bold text-gray-800">₹ 500.00</span>
+                    <a
+                      href="#"
+                      class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-500"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
         
     <footer class="flex-col text-center border-b-4 border-t-4 border-yellow-600">
-        <div class=" md:flex justify-between md:bg-black p-2">
+        <div class=" md:flex justify-between md:bg-black p-6 md:mx-10">
             <div class=" w-full md:max-w-lg p-2 ">
-                <h1 class="font-bold border-b-4 border-yellow-600    ">About Us</h1>
-                <p>Welcome to Mirorma, a premier brand of the Sughand Bhandar group, established in 2021 by Mr. Syed Imran. At Mirorma, we specialize in high-quality mirrors that blend beauty and function. 
+                <h1 class="font-bold border-b-4 border-yellow-600 mb-4 ">About Us</h1>
+                <p>Welcome to Mirorma, a premier brand of the Sughand Bhandar group, established in 2021 by 
+                    Mr. Syed Imran. At Mirorma, we specialize in high-quality mirrors that blend beauty and function. 
                     Each piece in our collection has been carefully curated to meet our high standards of elegance and style. 
-                    Discover the perfect expression of your style at us, where exceptional products and service come together to enhance your lifestyle experience
+                    Discover the perfect expression of your style at us, where exceptional products and service come 
+                    together to enhance your lifestyle experience
                 </p>
             </div>
-            <div class="">
-                <h1 class="font-bold pt-4 pb-2 border-b-4 border-yellow-600">Categories</h1>
+            <div class=" p-4 ">
+                <h1 class="font-bold mb-4 border-b-4 border-yellow-600">Categories</h1>
                 <ul>    
                     <li><a href="#" class="text-white">Solid Fragrence</a></li>
                     <li><a href="#" class="text-white">Light Fregrence</a></li>
                     <li><a href="#" class="text-white">Medium Fregrence</a></li>
                 </ul>
             </div>
-            <div class="">
-                <h1 class="font-bold pt-4 pb-2 border-b-4 border-yellow-600">Links</h1>
+            <div class=" p-4 ">
+                <h1 class="font-bold mb-4 border-b-4 border-yellow-600">Links</h1>
                 <ul>
                     <li><a href="#" class="text-white">About Us</a></li>
                     <li><a href="#" class="text-white">Terms & Condition</a></li>
                     <li><a href="#" class="text-white">Refund and Return Policy</a></li>
                 </ul>
             </div>  
-            <div class="">
-                <h1 class="font-bold pt-4 pb-2 border-b-4 border-yellow-600">My Accounts</h1>
+            <div class=" p-4">
+                <h1 class="font-bold mb-4 border-b-4 border-yellow-600">My Accounts</h1>
                 <ul>
                     <li><a href="#" class="text-white">Cart</a></li>
                     <li><a href="#" class="text-white">Order History</a></li>
