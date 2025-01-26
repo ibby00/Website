@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Grid with Tailwind</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="border-t-4 border-b-4 border-yellow-600">
-        <!-- Top Navbar -->
-        <div class="flex justify-between items-center p-2 bg-black w-full">
-          <!-- Logo -->
-          <div>
-            <img class="h-14 object-contain" src="al qudsiyah.jpg" alt="Logo">
-          </div>
-      
-          <!-- Search Bar -->
-          <div class="hidden sm:block flex-1 mx-4">
-            <input
-              class="w-full h-8 px-4 text-gray-900 rounded-lg placeholder-gray-400"
-              placeholder="Search">
-          </div>
-      
-          <!-- Buttons for Desktop -->
-          <div class="hidden sm:flex items-center space-x-2">
-            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Track Your Order</button>
-            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Cart</button>
-            <button class="font-bold text-sm bg-white px-4 py-2 text-black rounded-md">Log In</button>
-          </div>
-      
-          <!-- Icons for Mobile -->
-          <div class="flex sm:hidden items-center space-x-3">
-            <img src="cart.png" alt="Cart" class="w-8 h-8 rounded-lg cursor-pointer">
-            <img src="login.png" alt="Login" class="w-8 h-8 rounded-lg cursor-pointer">
-          </div>
+
+<body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-slate-700 text-white text-sm py-2">
+        <div class="container mx-auto flex justify-between">
+            <p>Chat on WhatsApp</p>
+            <p>FREE DELIVERY ALL OVER INDIA</p>
+            <p>Need Help? Proudly Make in India</p>
         </div>
-      
-        <!-- Bottom Navbar -->
-        <nav class="bg-yellow-600">
-          <ul class="flex justify-center sm:justify-start items-center space-x-4 p-2">
-            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Home</a></li>
-            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">About us</a></li>
-            <li><a href="#" class="text-white hover:bg-gray-800 px-4 py-2 rounded-lg">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-  </body>
+    </div>
+
+    <!-- Header -->
+    <div class="border-b-4 border-yellow-600">
+        <div class="container mx-auto flex justify-between items-center py-4 px-4 bg-black">
+            <!-- Logo -->
+            <div>
+                <img class="h-16 rounded-full" src="al qudsiyah.jpg" alt="Logo">
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hidden sm:block w-1/2 mx-4">
+                <input
+                    type="text"
+                    placeholder="Search"
+                    class="w-full px-4 py-2 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+            </div>
+
+            <!-- Buttons -->
+            <div class="hidden sm:flex space-x-3">
+                <button class="px-4 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-600">
+                    Track Your Order
+                </button>
+                <button class="px-4 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-600">
+                    Cart
+                </button>
+                <button class="px-4 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-600">
+                    Log In
+                </button>
+            </div>
+
+            <!-- Mobile Icons -->
+            <div class="flex sm:hidden space-x-4">
+                <img src="cart.png" alt="Cart" class="w-10 h-10 rounded-lg cursor-pointer">
+                <img src="login.png" alt="Login" class="w-10 h-10 rounded-lg cursor-pointer">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-yellow-600">
+        <div class="container mx-auto">
+            <ul class="flex justify-center sm:justify-start space-x-6 py-3 text-white text-lg">
+                <li>
+                    <a href="#" class="hover:bg-gray-800 px-4 py-2 rounded-lg transition duration-300">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:bg-gray-800 px-4 py-2 rounded-lg transition duration-300">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:bg-gray-800 px-4 py-2 rounded-lg transition duration-300">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="bg-cover bg-center h-96" style="background-image: url('banner-image.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h1 class="text-white text-4xl font-bold">Welcome to Al Qudsiyah</h1>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Explore Our Collection</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition">
+                <img src="product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-lg font-semibold mt-4">Perfume 1</h3>
+                <p class="text-gray-600 mt-2">Elegant and long-lasting fragrance.</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-600">
+                    Buy Now
+                </button>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Al Qudsiyah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
